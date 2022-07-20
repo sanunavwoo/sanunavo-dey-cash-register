@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(59, 58, 56);
+    color:azure;
+}
+h1{
+    background-color: rgb(238, 197, 13);
+    color:rgb(59, 58, 56);
+    text-align: center;
+    width: 50vw;
+    margin:1rem auto 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding:1rem;
+}
+p{
+    background-color: azure;
+    color:rgb(59, 58, 56);
+    width: 50vw;
+    margin: 0.75rem auto 1rem;
+    text-align: center;
+    text-decoration: wavy;
+    padding: 0.75rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+
+}
+label{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;
+    padding:0.5rem;
+}
+input{
+    padding:1rem;
+    margin: 0.5rem auto 1rem;
+}
+button{
+    background-color:rgb(238, 197, 13);
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 20%;
+    margin:auto;
+}
+#check-btn{
+    background-color:rgb(238, 197, 13);
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 20%;
+    margin:auto auto 1rem;
+}
+
+.remaining-div{
+    display:none;
+    
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}
+caption{
+    background-color: azure;
+    color:rgb(59, 58, 56);
+}
+
+table{
+    padding:1rem;
+    margin: 1rem auto 0.2rem;
+  
+}
+tr{
+    padding:0.75rem;
+    border: 1px solid rgb(238, 197, 13);
+    font-size: 1rem;
+}
+td{
+    padding:0.5rem;
+    border: 1px solid rgb(238, 197, 13);
+    font-size: 1rem;
+}
+
+#error-para{
+    color:red;
+    display:none;
+    font-weight: bolder;
+}
+
+
