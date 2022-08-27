@@ -12,7 +12,12 @@ nextbtn.addEventListener("click", function validateBillAmmount(){
     errorMessage.style.display="none";
     
     var billAmmountValue= billAmmount.value;
-    if(!(isNaN(billAmmountValue))){
+    if(billAmmountValue=="")
+    {
+        alert("Please enter a bill amount");
+    }
+    else{
+        if(!(isNaN(billAmmountValue))){
         if(billAmmountValue>0){
             //Unhide the rest of the section
             remainingDiv.style.display="flex";
@@ -23,10 +28,13 @@ nextbtn.addEventListener("click", function validateBillAmmount(){
             showErrorMessage("Bill should be greater than 0. Everything has a price- John Wick's villain");
         }
     }
-    else{
-        errorMessage.style.display= "block";
-        showErrorMessage("Bill Value should be a number")
-    }    
+        else{
+            errorMessage.style.display= "block";
+            showErrorMessage("Bill Value should be a number")
+        }    
+        
+    }
+    
         
 });
 
