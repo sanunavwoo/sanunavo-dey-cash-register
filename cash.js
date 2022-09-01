@@ -34,16 +34,34 @@ checkbtn.addEventListener("click", ()=>{
     errorMessage.style.display="none";
     var billAmmountValue= billAmmount.value;
     var cashGivenValue= cashGiven.value;
-    var ammountToBeReturned= cashGivenValue-billAmmountValue;
-    console.log(ammountToBeReturned);
-    if(ammountToBeReturned>0){
-        calculateChange(ammountToBeReturned);
+    if(cashGivenValue<0){
+        alert("Cash value can't be negative");
+    }
+    else if(billAmmountValue=="" || cashGivenValue==""){
+        alert("Please fill up all fields");
     }
     else{
-        //Bill is more than cash value. Invalid
-        errorMessage.style.display= "block";
-        showErrorMessage("Bill is more than the cash you have given. No Bargaining here!");
+        var ammountToBeReturned= cashGivenValue-billAmmountValue;
+        console.log(ammountToBeReturned);
+        if(ammountToBeReturned>0){
+            calculateChange(ammountToBeReturned);
+        }
+        else{
+            //Bill is more than cash value. Invalid
+            errorMessage.style.display= "block";
+            showErrorMessage("Bill is more than the cash you have given. No Bargaining here!");
+        }
     }
+    // var ammountToBeReturned= cashGivenValue-billAmmountValue;
+    // console.log(ammountToBeReturned);
+    // if(ammountToBeReturned>0){
+    //     calculateChange(ammountToBeReturned);
+    // }
+    // else{
+    //     //Bill is more than cash value. Invalid
+    //     errorMessage.style.display= "block";
+    //     showErrorMessage("Bill is more than the cash you have given. No Bargaining here!");
+    // }
 
 
 
