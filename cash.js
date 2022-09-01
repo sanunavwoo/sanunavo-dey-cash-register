@@ -34,8 +34,8 @@ checkbtn.addEventListener("click", ()=>{
     errorMessage.style.display="none";
     var billAmmountValue= billAmmount.value;
     var cashGivenValue= cashGiven.value;
-    if(cashGivenValue<0){
-        alert("Cash value can't be negative");
+    if(cashGivenValue<0 || billAmmountValue<0){
+        alert("Cash value or bill value can't be negative");
     }
     else if(billAmmountValue=="" || cashGivenValue==""){
         alert("Please fill up all fields");
